@@ -9,6 +9,9 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import {useState, useEffect} from 'react';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
+import SimpleCard from './components/SimpleCard'
+
+
 
 const useStyles  = makeStyles({
   root: {
@@ -35,8 +38,6 @@ const CheckboxExample = () => {
     />}
     label = 'testing'
     />
-      
-      
   )
 }
 
@@ -51,6 +52,7 @@ function App() {
         label = 'The time'
         placeholder = "test@test.ca"
         />
+
         <CheckboxExample/>
         <ButtonGroup 
         color = "primary"
@@ -67,6 +69,9 @@ function App() {
           Discard
         </Button>
         </ButtonGroup>
+
+        <SimpleCard/> 
+
         <img src={logo} className="App-logo" alt="logo" />
       </header>
     </div>
